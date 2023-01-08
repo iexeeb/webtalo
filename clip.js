@@ -3,7 +3,7 @@ const addDiv = (text) =>
 
 const b64DecodeUnicode = (str) =>
   decodeURIComponent(
-    [...atob(str)]
+    [...window.atob(str)]
       .map((c) => "%" + ("00" + c.charCodeAt(0).toString(16)).slice(-2))
       .join("")
   );
