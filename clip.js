@@ -1,5 +1,5 @@
 const addDiv = (text) =>
-  document.body.insertAdjacentHTML("afterend", `<div>${text}</div>`);
+  document.body.insertAdjacentHTML("beforeEnd", `<div>${text}</div>`);
 
 const b64DecodeUnicode = (str) =>
   decodeURIComponent(
